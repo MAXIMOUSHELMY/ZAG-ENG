@@ -1,0 +1,48 @@
+.youtube{
+    position: relative;
+    border: 1px solid black;
+    width: 400px;
+    height: 250px;
+    background-color: red;
+    border-radius: 75px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+
+.youtube-1 {
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    border-top: 50px solid transparent;
+    border-left: 100px solid white;
+    border-bottom: 50px solid transparent;
+
+    top: 30%;
+    left: 49%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+.github-icon {
+  font-size: 200px;
+  color: #ffffff;
+}
+
+.instagram-icon {
+  font-size: 200px;
+  color: #e81132;
+}
+/* Twitter Icon */
+.twitter-icon {
+  font-size: 200px;
+  color: #1da1f2;
+}
+/* Crown Icon */
+.crown-icon {
+  font-size: 200px;
+  color: #f1c232;
+}

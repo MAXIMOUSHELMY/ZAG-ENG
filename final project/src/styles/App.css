@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background: #eceff4;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  transition: all 0.6s ease;
+}
+
+.weather-container {
+  background: white;
+  border-radius: 35px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  min-height: 850px;
+}
+
+/* ☀️ Clear */
+.bg-clear {
+  background: linear-gradient(to top, #fddb92, #d1fdff);
+}
+
+/* ☁️ Clouds */
+.bg-clouds {
+  background: linear-gradient(to top, #bdc3c7, #2c3e50);
+}
+
+/* 🌧 Rain */
+.bg-rain {
+  background: linear-gradient(to top, #4b79a1, #283e51);
+}
+
+/* ❄️ Snow */
+.bg-snow {
+  background: linear-gradient(to top, #e6dada, #274046);
+}
+
+/* 🌫 Mist */
+.bg-mist {
+  background: linear-gradient(to top, #757f9a, #d7dde8);
+}
+
+/* default */
+.bg-default {
+  background: linear-gradient(to top, #74ebd5, #acb6e5);
+}
+
+/* Loading state */
+.app-bg h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  animation: loadPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes loadPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .weather-container {
+    flex-direction: column;
+    border-radius: 25px;
+    min-height: auto;
+  }
+
+  .app-bg {
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+}

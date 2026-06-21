@@ -1,0 +1,31 @@
+
+#demo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+ 
+}
+
+#demo h2{
+  margin: 10px;
+padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+
+.light{
+  background-color: blue;
+  color: #111;
+}
+
+
+.dark{
+  background-color: brown;
+  color: #111;
+}
